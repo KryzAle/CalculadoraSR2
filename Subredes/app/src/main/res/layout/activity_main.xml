@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jsroc.subredes.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text="."
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_alignBottom="@+id/parte1"
+            android:layout_toEndOf="@+id/parte1"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@+id/textView5" />
+
+        <TextView
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toEndOf="@+id/parte3"
+            android:id="@+id/textView6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <EditText
+            android:id="@+id/parte1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/parte2"
+            android:layout_alignBottom="@+id/parte2"
+            android:layout_alignEnd="@+id/textView14"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/parte4"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/parte2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/eds"
+            android:layout_marginBottom="45dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/parte3"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/parte4"
+            android:layout_alignBottom="@+id/parte4"
+            android:layout_toEndOf="@+id/textView5"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_alignBottom="@+id/parte2"
+            android:layout_toEndOf="@+id/parte2" />
+
+        <EditText
+            android:id="@+id/et_subredes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btn_calcular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_subredes"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:text="Ingresar la cantidad de subredes necesarias:"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/eds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pmascara"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="casual"
+            android:text="Mascara de subred"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pmascara"
+            android:layout_alignBottom="@+id/pmascara"
+            android:layout_alignStart="@+id/et_subredes"
+            android:text="/"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/parte1"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="casual"
+            android:text="Ingresar la red:"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/pmascara"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/textView3"
+            android:layout_marginBottom="40dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="casual"
+            android:lineSpacingExtra="14sp"
+            android:text="Calculadora de Subredes"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/eds"
+            android:background="@android:color/background_dark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Calcular"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
