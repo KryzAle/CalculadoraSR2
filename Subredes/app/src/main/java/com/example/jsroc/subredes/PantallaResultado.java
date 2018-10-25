@@ -19,6 +19,7 @@ public class PantallaResultado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_resultado);
 
+        Sr = (TextView) findViewById(R.id.txt_detected);
         NumSubR= (TextView) findViewById(R.id.txt_Sred);
         NumBSubred= (TextView) findViewById(R.id.txt_bSred);
         MascSR= (TextView) findViewById(R.id.txt_Ms);
@@ -28,7 +29,6 @@ public class PantallaResultado extends AppCompatActivity {
         Sal= (TextView) findViewById(R.id.txt_salto);
         VerSR = (Button) findViewById(R.id.btn_rangos);
 
-        Sr= (TextView) findViewById(R.id.txt_Sr);
 
         Bundle extra=getIntent().getExtras();
         nSubR=extra.getString("RSubred");
@@ -38,7 +38,7 @@ public class PantallaResultado extends AppCompatActivity {
         nBHost=extra.getString("NBHost");
         nsalto=extra.getString("salto");
         nTotal=extra.getString("Total");
-        sr=extra.getString("SR");
+
         MasS=extra.getString("Msc");
 
         octeto1 = extra.getInt("octeto1");
@@ -48,7 +48,7 @@ public class PantallaResultado extends AppCompatActivity {
         tipo = extra.getString("tipo");
         tiponumber = extra.getInt("tiponumber");
 
-        Sr.setText(sr);
+
         Sal.setText(nsalto);
         MascSR.setText(MasS);
         NumBSubred.setText(nbSred);
@@ -56,6 +56,11 @@ public class PantallaResultado extends AppCompatActivity {
         MascSRB.setText(MasSB);
         NumHost.setText(nHost);
         NumbHost.setText(nBHost);
+        switch (tiponumber){
+            case 1: Sr.setText("Red Detectada tipo A");break;
+            case 2: Sr.setText("Red Detectada tipo B");break;
+            case 3: Sr.setText("Red Detectada tipo C");break;
+        }
 
 
         /*VerSR.setOnClickListener(new View.OnClickListener() {

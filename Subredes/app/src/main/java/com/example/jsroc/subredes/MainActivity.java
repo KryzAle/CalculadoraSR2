@@ -128,7 +128,7 @@ EditText ps,Pms,p1,p2,p3,p4;
 
                 BSR=(s1.calNumRed(Double.parseDouble(ps.getText().toString())));
 
-                v1.putExtra("SR",SR +"                     "+ SRAux);
+
                 v1.putExtra("Total",String.valueOf(paux));
                 v1.putExtra("salto",String.valueOf(Salto));
                 v1.putExtra("bSred",String.valueOf((int)BSR.doubleValue()));
