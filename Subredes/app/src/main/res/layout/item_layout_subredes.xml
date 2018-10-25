@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="inicio" />
+
+    <TextView
+        android:id="@+id/tv_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_inicio"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="18dp"
+        android:text="fin" />
+
+    <TextView
+        android:id="@+id/tv_mascaradec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="128dp"
+        android:text="mascarad"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_mascaraslash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fin"
+        android:layout_alignStart="@+id/tv_mascaradec"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-17dp"
+        android:text="mascaras"
+        android:visibility="visible" />
+</RelativeLayout>

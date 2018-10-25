@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
 EditText ps,Pms,p1,p2,p3,p4;
     Button BtnCalcular;
     Double NumSubredes,NumHost,NumBHost,MascaSubredB,BSR;
-    int paux,Salto,con,s,t;
-    String SR,SRAux;
+    int paux,Salto,con,s,t,octeto1,octeto2,octeto3,octeto4,tiponumber;
+    String SR,SRAux,tipo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,12 +99,30 @@ EditText ps,Pms,p1,p2,p3,p4;
                 if(con==2){
                     SR= p1.getText().toString()+"."+String.valueOf(s)+"."+"0"+"."+"0";
                     SRAux= p1.getText().toString()+"."+String.valueOf(t)+"."+"0"+"."+"0";
+                    octeto1 = Integer.parseInt(p1.getText().toString());
+                    octeto2 = Integer.parseInt(String.valueOf(s));
+                    octeto3 = 0;
+                    octeto4 = 0;
+                    tipo="A";
+                    tiponumber=1;
                 }else if(con==3){
                     SR= p1.getText().toString()+"."+p2.getText().toString()+"."+String.valueOf(s)+"."+"0";
                     SRAux= p1.getText().toString()+"."+p2.getText().toString()+"."+String.valueOf(t)+"."+"0";
+                    octeto1 = Integer.parseInt(p1.getText().toString());
+                    octeto2 = Integer.parseInt(p2.getText().toString());
+                    octeto3 = Integer.parseInt(String.valueOf(s));
+                    octeto4 = 0;
+                    tipo="B";
+                    tiponumber=2;
                 }else{
                     SR= p1.getText().toString()+"."+p2.getText().toString()+"."+p3.getText().toString()+"."+String.valueOf(s);
                     SRAux= p1.getText().toString()+"."+p2.getText().toString()+"."+p3.getText().toString()+"."+String.valueOf(t);
+                    octeto1 = Integer.parseInt(p1.getText().toString());
+                    octeto2 = Integer.parseInt(p2.getText().toString());
+                    octeto3 = Integer.parseInt(p3.getText().toString());
+                    octeto4 = Integer.parseInt(String.valueOf(s));
+                    tipo="C";
+                    tiponumber=3;
                 }
 
 
@@ -119,7 +137,12 @@ EditText ps,Pms,p1,p2,p3,p4;
                 v1.putExtra("NHost",String.valueOf((int)NumHost.doubleValue()));
                 v1.putExtra("NBHost",String.valueOf((int)NumBHost.doubleValue()));
                 v1.putExtra("bMs","/"+String.valueOf((int)MascaSubredB.doubleValue()));
-
+                v1.putExtra("octeto1",octeto1);
+                v1.putExtra("octeto2",octeto2);
+                v1.putExtra("octeto3",octeto3);
+                v1.putExtra("octeto4",octeto4);
+                v1.putExtra("tipo",tipo);
+                v1.putExtra("tiponumber",tiponumber);
                 startActivity(v1);
             }
         });

@@ -43,7 +43,8 @@
             android:layout_alignBottom="@+id/parte2"
             android:layout_alignEnd="@+id/textView14"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="3"/>
 
         <EditText
             android:id="@+id/parte4"
@@ -52,7 +53,8 @@
             android:layout_alignBottom="@+id/textView6"
             android:layout_toEndOf="@+id/textView6"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="3"/>
 
         <EditText
             android:id="@+id/parte2"
@@ -62,7 +64,8 @@
             android:layout_marginBottom="45dp"
             android:layout_toEndOf="@+id/textView4"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="3"/>
 
         <EditText
             android:id="@+id/parte3"
@@ -72,7 +75,8 @@
             android:layout_alignBottom="@+id/parte4"
             android:layout_toEndOf="@+id/textView5"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="3"/>
 
         <TextView
             android:text="."
@@ -91,7 +95,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="35dp"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="3"/>
 
         <TextView
             android:id="@+id/textView3"
@@ -148,7 +153,8 @@
             android:layout_marginBottom="40dp"
             android:layout_toEndOf="@+id/textView4"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="3"/>
 
         <TextView
             android:id="@+id/textView"
